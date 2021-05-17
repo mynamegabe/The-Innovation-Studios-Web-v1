@@ -1,0 +1,87 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="web.css"/>
+  <link rel="icon" href="Media/tisposter.png" type="image/gif">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <div class="actionbar">
+    <h3></h3>
+    <div id="barlist">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus2.html">About Us</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#" id="profile" class="current">Profile</a></li>
+    </div>
+  </div><br><br><br><br>
+  <div id="header" style="text-align:center;">
+    <img src="Media/bg3.jpg" style="width:100%;position:fixed;top:0px;left:0px;z-index:0;"/>
+    <div class="circle">Profile Picture</div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div style="text-align:center;z-index:2;background-color:#202121;position:relative;">
+    <br>
+    <h4 id="namehead">Hello</h4>
+    <table style="margin:auto;">
+      <caption>Details</caption>
+      <tr><td>Username</td><td id="tablename">None</td></tr>
+      <tr><td>Email</td><td id="tableemail">None</td></tr>
+    </table>
+
+    <h4>Bio</h4>
+    <textarea id="bio" readonly> </textarea><br><br>
+    <input type="button" id="biosub" value="Change" onclick="changebio()"/>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="bottombar">
+      <div data-aos="flip-left" data-aos-duration="1000">
+        <a href="https://www.instagram.com/theinnovationstudios/"><img src="Media/iglogo2.png"></a>
+        <a href="mailto:theinnovantionstudios@gmail.com"><img src="Media/gmailicon.png"></a>
+        <a href="#logo"><img src="Media/fb.png"></a>
+      </div>
+      <div data-aos="fade-right" data-aos-offset="-50" data-aos-duration="1000">
+        <h8>@theinnovationstudios</h8><br>
+        <h8>theinnovationstudios@gmail.com</h8>
+      </div>
+    </div>
+
+    <div id="biobox" style="display:none;">
+      <textarea id="bio1"> </textarea><br><br>
+      <input type="button" id="biosub" value="Set" onclick="changebi()"/>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+  <!-- HIDE FROM INCOMPATIBLE BROWSERS
+  var formData = location.search;
+  /*
+  formData = formData.substring(formData.indexOf("userinput")+1, formData.indexOf("&"));
+  document.getElementById("namehead").innerText = "Hi ".concat(formData,"!");
+  document.getElementById("tablename").innerText = formData;
+  document.getElementById("tableemail").innerText = conFormData;
+  */
+  formData = formData.substring(1, formData.length);
+  while (formData.indexOf("+") != -1) {
+  	formData = formData.replace("+", " ");
+  }
+  formData = unescape(formData);
+  var formArray = formData.split("&");
+  for (i = 0;i < 2;i++) {
+    formArray[i] = formArray[i].substring(formArray[i].indexOf("=")+1,formArray[i].length)
+  }
+  document.getElementById("namehead").innerText = "Hi ".concat(formArray[0],"!");
+  document.getElementById("tablename").innerText = formArray[0];
+  document.getElementById("tableemail").innerText = formArray[1];
+  // STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+</body>

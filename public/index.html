@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="web.css"/>
+    <link rel="stylesheet" type="text/css" href="ionicons.css"/>
+    <link rel="icon" href="Media/tisposter.png" type="image/gif">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+
+    <div class="actionbar">
+      <h3></h3>
+      <div id="barlist">
+      <ul>
+        <li><a href="#" class="current">Home</a></li>
+        <li><a href="aboutus2.html">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><button id="login" onclick="login()">Login</button></li>
+      </div>
+    </div><br><br><br><br>
+
+    <div style="text-align:center;margin:0;">
+      <div style="background-color:white;">
+        <div style="height:10%;background-color:white;"></div>
+        <video class="logoclass" id="logo" width="600" autoplay muted>
+          <source src="Media/Splash Screen_2.mp4" type="video/mp4"/>
+        </video>
+        <div style="height:100px;background-color:white;">
+          <span id="appbar">
+            <div data-aos="flip-left" data-aos-duration="1000">
+              <a href="https://www.instagram.com/theinnovationstudios/"><img src="Media/iglogo2.png"></a>
+              <a href="mailto:theinnovantionstudios@gmail.com"><img src="Media/gmailicon.png"></a>
+              <a href="#logo"><img src="Media/fb.png"></a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <h1>Coming Soon</h1>
+
+    <div style="text-align:center;" data-aos="fade-right" data-aos-duration="1000">
+      <a id="aviation" href="projects.html#aviation" target="_block"><img src="Media/aviation2.png"></a>
+    </div>
+    <h1 id="tomove">Released</h1><br><br>
+    <div id="applist" style="text-align:center;">
+
+      <div data-aos="fade-down-right" data-aos-duration="1000">
+        <a href="projects.html#icookie"><img src="Media/cookie.png" id="clogo2"></a>
+      </div><h4 data-aos="zoom-in" id="bottom">IMPOSSIBLE COOKIE</h4><br><br>
+
+      <div data-aos="fade-down-right" data-aos-duration="1000">
+        <a href="projects.html#hang"><img src="Media/hangman.png" id="hlogo2"></a>
+      </div><h4 id="bottom" data-aos="zoom-in">HANGMAN</h4><br><br>
+
+      <div data-aos="fade-down-right" data-aos-duration="1000">
+        <a href="projects.html#tictactoe"><img src="Media/tictactoe.png" id="tlogo2"></a>
+      </div><h4 id="bottom" data-aos="zoom-in">TIC TAC TOE</h4><br><br>
+    </div>
+
+    <div id="logodiv" style="display:none;text-align:center;">
+      <img src="Media/tisposter.png" width="200"/>
+      <h6>Login</h6>
+      <form id="loginform" method="get" action="profile.html">
+        <label for="username" id="usertext">Username:</label>
+        <input type="text" id="userinput" name="userinput"/>
+        <br><br>
+        <label for="password" id="passtext">Password:</label>
+        <input type="password" id="userpass" name="userpass"/>
+        <br>
+        <button type="button" id="forgotpass">Forgot password</button><br><br>
+        <button type="submit" id="loginbutton">Login</button><br><br>
+        <button type="button" id="signup" onclick="popsignup()">Don't have an account? Sign up!</button><br><br><br>
+        <button type="button" id="close" onclick="closeform()">Back</label>
+      </form>
+    </div>
+    <div id="signuppop" style="display:none;text-align:center;">
+      <img src="Media/tisposter.png" width="200"/>
+      <h6>Signup</h6>
+      <form id="loginform" method="get" action="profile.html">
+        <label for="username" id="usertext">Username:</label>
+        <input type="text" id="userinput" name="userinput"/><br><br>
+        <label for="email" id="emailtext">Email:</label>
+        <input type="email" id="useremail" name="useremail"/>
+        <br><br>
+        <label for="password" id="passtext">Password:</label>
+        <input type="password" id="userpass" name="userpass"/>
+        <br><br>
+        <label for="password" id="passtext2">Repeat Password:</label>
+        <input type="password" id="userpass2" name="userpass2"/>
+        <br>
+        <button type="submit" id="signupbutton" onclick="usersignup()">Sign Up</button><br><br>
+        <button type="button" id="signup" onclick="login()" action="">Have an account? Log in!</button><br><br><br>
+        <button type="button" id="close" onclick="closeform()">Back</label>
+      </form>
+    </div>
+
+    <!--
+      <div class="div1">
+        <a href="https://play.google.com/store/apps/details?id=com.theinnovationstudios.impossiblecookie&hl=en" target="_block"><img id="clogo" src="Media/cookie.png" style="padding-left:40px;" width="150"></a>
+        <div class="div2" style="color:white;">
+          <br><br>
+          <strong class="smalltext" style="margin-left:-200px;">Impossible Cookie</strong>
+          <p style="padding-left:30px">Click the cookies and reach 50 cookies clicked as quickly as possible!</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="div1">
+        <a href="https://play.google.com/store/apps/details?id=com.theinnovationstudios.hangman&hl=en" target="_block"><img id="hlogo" src="Media/hangman.png" style="padding-left:40px;vertical-align:middle;" width="150"></a>
+        <div class="div2" style="color:white;">
+          <br><br>
+          <strong class="smalltext" style="margin-left:-210px;">Hangman</strong>
+          <p style="margin-left:-74px">Another classic game, Hangman</p>
+          <p style="padding-left:30px">Guess the letters and the word before its too late!</p>
+        </div>
+      </div><br><br><br>
+
+      <div class="div1">
+        <a href="https://play.google.com/store/apps/details?id=com.theinnovationstudios.tictactoe&hl=en" target="_block"><img id="tlogo" src="Media/tictactoe.png" style="padding-left:40px;float:left;;" width="150"></a>
+        <div id="tcool" class="div2" style="color:white;">
+          <br><br>
+          <strong class="smalltext" style="margin-left:-80px;">Tic Tac Toe</strong>
+          <p style="margin-left:-10px">The classic game of Tic Tac Toe</p>
+          <p style="padding-left:30px">Place three X's or O's in a row to win!</p>
+        </div>
+      </div>
+-->
+      <br><br></div><br>
+
+      <h1>Instagram</h1><br><br>
+      <div data-aos="fade-right" data-aos-duration="1000">
+        <div class='embedsocial-instagram' data-ref="10c21f294d86d9adcb061a9596bf6b1ce6826a9f"></div>
+        <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+      </div>
+      <br><br><h1 style="text-align:center;">Contact Us!</h1><br><br>
+
+      <form action="mailto:theinnovationstudios@gmail.com" method="GET">
+        <input id="sub2" name="subject" type="text" placeholder="Subject"/><br><br>
+        <textarea id="bod2" name="body" placeholder="Body"></textarea><br><br>
+        <input id="submit" type="submit" value="Send"/>
+      </form><br>
+      <br><br>
+
+      <div id="bottombar">
+        <div data-aos="flip-left" data-aos-duration="1000">
+          <a href="https://www.instagram.com/theinnovationstudios/"><img src="Media/iglogo2.png"></a>
+          <a href="mailto:theinnovantionstudios@gmail.com"><img src="Media/gmailicon.png"></a>
+          <a href="#logo"><img src="Media/fb.png"></a>
+        </div>
+        <div data-aos="fade-right" data-aos-offset="-50" data-aos-duration="1000">
+          <h8>@theinnovationstudios</h8><br>
+          <h8>theinnovationstudios@gmail.com</h8>
+        </div>
+      </div>
+
+      <div type="button" onclick="chatbotclose()" id="closechat">X</div>
+
+      <div type="button" id="wholechatbot" onclick="chatbotopen()">
+        <div id="chatbotbutton">
+          <p>Help</p>
+        </div>
+        <div id="chatbotwhite">
+
+        </div>
+      </div>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="/__/firebase/7.14.2/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+
+      <!-- Initialize Firebase -->
+      <script src="/__/firebase/init.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+
+  </body>

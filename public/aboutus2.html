@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="aboutus2.css"/>
+    <link rel="icon" href="Media/tisposter.png" type="image/gif">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+
+    <div class="actionbar">
+      <h3></h3>
+      <div id="barlist">
+      <ul>
+        <li><a href="index.html">Home</a>
+        <div id="bordertop"></div></li>
+        <li><a href="#" class="current">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><button id="login" onclick="login()">Login</button></li>
+      </div>
+    </div>
+
+    <div id="header" style="text-align:center;">
+      <h2>About Us</h2>
+      <img src="Media/sky.jpg" id="staticbg"/>
+    </div>
+
+    <div style="background-color:#202121;text-align:center;z-index:2;">
+      <h1 id="heads">&nbsp</h1>
+
+      <h4 id="missionhead">Our Mission</h4>
+      <h4 id="mission">Building things from scratch that everyone can enjoy and utilise</h4>
+      <div style="margin-bottom:3em;margin-top:4em;">
+        <div data-aos="flip-left" id="cool">
+          <a href="#pics1"><img src="Media/cysme.jpg" style="width:250px;border-radius:125px;border:5px solid white;margin-right:50px;"/></a>
+          <p style="display:inline-block;color:white;">Select one</p>
+          <a href="#pics2"><img src="Media/pp.jfif" style="width:250px;border-radius:125px;border:5px solid white;margin-left:50px"/></a><br><br><br><br>
+          <h4 id="desc">We are a group of self taught developers and we make games, software and our own website from scratch.</h4>
+        </div>
+      </div>
+      <h1 id="heads">&nbsp</h1>
+
+      <div data-aos="fade-down" data-aos-offset="500" text-align="center">
+        <img id="pics1" src="Media/cysme.jpg" style="width:250px;border-radius:125px;border:5px solid white;margin-top:6em;"/>
+      </div><br>
+      <div data-aos="fade-top" data-aos-offset="300" data-aos-easing="ease-in-sine" style="display:block;" id="logos">
+        <a href="https://www.instagram.com/urmomgabe/"><img src="Media/iglogo2.png" style="width:50px;"></a><a href="mailto:gabeseet@gmail.com"><img src="Media/gmailicon.svg" style="height:45px;margin-left:15px;"></a>
+        <a href="https://www.youtube.com/channel/UCgQncDmbcppZtIe64X7jA0A"><img src="Media/ytlogo.svg" style="height:45px;margin-left:15px;"></a><br><br>
+      </div>
+      <div data-aos="fade-right" data-aos-offset="300" style="text-align:center;">
+        <span id="gabriel">Gabriel Seet &ltCo-founder&gt</span><br><br>
+        <span id="gabtext">Hi! I'm a year 1 in Nanyang Polytechnic's Cybersecurity course<br>I'm interested in all things IT-related<br>I do web development, app creation with Gamemaker Studio 2, minimal graphic design for our apps, and some social media management!<br>Python is my main language at the moment.<br><br></span>
+      </div><br>
+      <div data-aos="fade-down" data-aos-offset="100">
+        <img id="pics2" src="Media/pp.jfif" style="width:250px;border-radius:125px;border:5px solid white;"/><br><br>
+      </div>
+      <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" id="logos">
+        <a href="https://www.instagram.com/aamuelchua/"><img src="Media/iglogo2.png" style="width:50px;"></a>
+        <a href="mailto:devaamuelchua@gmail.com"><img src="Media/gmailicon.svg" style="height:45px;margin-left:15px;"></a>
+      </div><br>
+      <div data-aos="fade-right" data-aos-offset="100" style="text-align:center;">
+        <span id="aamuel">Aamuel Chua &ltCo-founder&gt</span><br><br>
+        <span id="aamtext">Hey! I'm Aamuel! I am an Aviation Enthusiast and I'm currently a freshman studying Aviation Management and Services at Temasek Polytechnic.<br>I build software and mobile applications for TIS projects.<br>I take care of the admin side of TIS too!!</span><br>
+      </div><br><br>
+    <div id="bottombar">
+      <div data-aos="flip-left" data-aos-duration="1000">
+        <a href="https://www.instagram.com/theinnovationstudios/"><img src="Media/iglogo2.png"></a>
+        <a href="mailto:theinnovantionstudios@gmail.com"><img src="Media/gmailicon.png"></a>
+        <a href="#logo"><img src="Media/fb.png"></a>
+      </div>
+      <div data-aos="fade-right" data-aos-offset="-50" data-aos-duration="1000">
+        <h8>@theinnovationstudios</h8><br>
+        <h8>theinnovationstudios@gmail.com</h8>
+      </div>
+    </div>
+    </div>
+    <div id="logodiv" style="display:none;text-align:center;">
+      <img src="Media/tisposter.png" width="200"/>
+      <h6>Login</h6>
+      <form id="loginform" method="get" action="profile.html">
+        <label for="username" id="usertext">Username:</label>
+        <input type="text" id="userinput" name="userinput"/>
+        <br><br>
+        <label for="password" id="passtext">Password:</label>
+        <input type="password" id="userpass" name="userpass"/>
+        <br>
+        <button type="button" id="forgotpass">Forgot password</button><br><br>
+        <button type="submit" id="loginbutton">Login</button><br><br>
+        <button type="button" id="signup" onclick="popsignup()">Don't have an account? Sign up!</button><br><br><br>
+        <button type="button" id="close" onclick="closeform()">Back</label>
+      </form>
+    </div>
+    <div id="signuppop" style="display:none;text-align:center;">
+      <img src="Media/tisposter.png" width="200"/>
+      <h6>Signup</h6>
+      <form id="loginform" method="get" action="profile.html">
+        <label for="username" id="usertext">Username:</label>
+        <input type="text" id="userinput" name="userinput"/><br><br>
+        <label for="email" id="emailtext">Email:</label>
+        <input type="email" id="useremail" name="useremail"/>
+        <br><br>
+        <label for="password" id="passtext">Password:</label>
+        <input type="password" id="userpass" name="userpass"/>
+        <br><br>
+        <label for="password" id="passtext2">Repeat Password:</label>
+        <input type="password" id="userpass2" name="userpass2"/>
+        <br>
+        <button type="submit" id="signupbutton" onclick="usersignup()">Sign Up</button><br><br>
+        <button type="button" id="signup" onclick="login()" action="">Have an account? Log in!</button><br><br><br>
+        <button type="button" id="close" onclick="closeform()">Back</label>
+      </form>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1400
+      });
+    </script>
+</body>

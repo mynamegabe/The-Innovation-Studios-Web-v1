@@ -1,0 +1,418 @@
+html {
+  scroll-behavior: smooth;
+  background-color:#202121;
+}
+#barlist ul li:hover {
+	border-top:1px solid #202121;
+	border-bottom:1px solid #202121;
+}
+html,body {
+  margin:0;
+  padding:0;
+}
+
+div.actionbar {
+  position:fixed;
+  top:0px;
+  left:2.5%;
+  width:95%;
+}
+
+#barlist ul li a[href="#"] {
+	border-color:black;
+  border-width:20px;
+}
+
+h3 {
+  position:relative;
+  top:-5px;
+  background-color:white;
+  height:45px;
+  border:2px solid black;
+  border-radius:10px 10px 10px 10px
+}
+
+
+div.barlist {
+  position:fixed;
+  top:0px;
+  left:2.5%;
+}
+
+#staticbg {
+  width:100%;
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index:-1;
+}
+
+h4 {
+  position:relative;
+  top:10px;
+  text-align:center;
+  font-family:monospace;
+  font-size:100px;
+  margin-top:180px;
+  padding-top:140px;
+  margin-bottom:200px;
+  color:white;
+}
+
+#barlist ul li:hover {
+	border-top:1px solid #202121;
+	border-bottom:1px solid #202121;
+}
+
+ul {
+  position:fixed;
+  left:55px;
+  top:20px;
+	width:600px;
+	list-style-type:none;
+	margin:0px auto;
+	padding:0px;
+}
+
+ul li {
+	display:inline-block;
+	margin-left:20px;
+	text-align:center;
+}
+
+ul li a{
+	color:white;
+	border-radius:10px;
+	display:inline-block;
+	width:100px;
+  height:15px;
+	padding:10px;
+	text-decoration:none;
+	background-color:white;
+  color:#202121;
+  font-family:monospace;
+  font-size:18px;
+}
+
+#aviation2 {
+  height:350px;
+  width:900px;
+}
+.actionbar {
+  position:fixed;
+  top:0px;
+  left:2.5%;
+  width:95%;
+  z-index:10;
+}
+
+#bars {
+  color:white;
+  size:100% 400px;
+  margin-bottom:0px;
+  margin-top:0px;
+  padding-bottom:10px;
+  background-color:white;
+  width:100%;
+  height:400%;
+}
+
+h2 {
+  position:relative;
+  top:0px;
+  font-family:monospace;
+  font-size:100px;
+  background-color:white;
+  margin-top:0px;
+}
+
+
+#logo3 {
+  position:relative;
+  margin-left:150px;
+  top:80px;
+  left:50%;
+  width:180px;
+  display:inline-block;
+  z-index:1;
+}
+
+#header {
+  position:relative;
+  top:-180px;
+  margin-bottom:-270px;
+}
+
+#heads {
+  color:white;
+  background-color:#7ce6d7;
+  font-family:monospace;
+  text-align:center;
+  height:1em;
+  position:relative;
+  margin-top:0px;
+}
+
+
+.smalltext {
+  padding-left:30px;
+  font-weight:bold;
+  font-family:monospace;
+  font-size:2em;
+}
+
+.div1 {
+  overflow:auto;
+}
+
+.div1 p {
+  font-size:1.5em;
+}
+
+#clogo,#tlogo,#hlogo{
+  float:left;
+  border-radius:20px;
+}
+
+
+
+#logodiv {
+  z-index:3;
+  position:fixed;
+  top:33%;
+  width:100%;
+  height:600px;
+  background-color:white;
+  border-radius:50px;;
+  border:4px solid #202121;
+}
+
+#signuppop {
+  z-index:4;
+  position:fixed;
+  top:33%;
+  width:100%;
+  height:600px;
+  background-color:white;
+  border-radius:50px;;
+  border:4px solid #202121;
+}
+
+h6 {
+  margin-top:-20px;
+  margin-bottom:40px;
+  font-family:monospace;
+  font-size:50px;
+}
+
+#loginform label {
+  color:black;
+  font-size:30px;
+  font-family:monospace;
+}
+
+#loginform input {
+  border-width:0px 0px 3px 0px;
+  width:230px;
+  height:30px;
+  font-family:monospace;
+  font-size:25px;
+}
+
+#signupbutton {
+  margin-top:20px;
+  border:0px;
+  background-color:white;
+  font-family:monospace;
+  font-size:20px;
+}
+
+
+#loginbutton,#forgotpass {
+  border:0px;
+  background-color:white;
+  font-family:monospace;
+  font-size:20px;
+}
+
+#forgotpass {
+  font-size:10px;
+  position:relative;
+  left:-160px;
+}
+
+#signup {
+  border:0px;
+  background-color:white;
+  font-family:monospace;
+  font-size:14px;
+}
+
+#signup:hover {
+  text-shadow:2px 2px gray;
+}
+#loginbutton:hover {
+  text-shadow:2px 2px gray;
+}
+#forgotpass:hover {
+  text-shadow:2px 2px gray;
+}
+#signupbutton:hover {
+  text-shadow:2px 2px gray;
+}
+
+#userpass2 {
+  margin-left:-200px;
+}
+#passtext2 {
+  margin-right:200px;
+}
+
+#login {
+  position:fixed;
+  right:80px;
+  top:20px;
+  background-color:white;
+  border:0px;
+  font-family:monospace;
+  font-size:18px;
+  height:37px;
+}
+
+#login:hover {
+	border-top:1px solid #202121;
+	border-bottom:1px solid #202121;
+}
+
+#bottombar {
+  height:150px;
+  width:100%;
+  background-color:gray;
+  text-align:center;
+  vertical-align:middle;
+}
+
+#bottombar img {
+  width:20px;
+  margin-left:10px;
+  margin-top:40px;
+}
+
+/*calendar*/
+#calendar {
+  width:70%;
+  height:inherit;
+  background-color:white;
+  margin:auto;
+  text-align:center;
+  border-radius:20px;
+}
+
+h5 {
+  font-size:30px;
+  font-family:monospace;
+  background-color:#7ce6d7;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+}
+
+tr {
+  margin:auto;
+}
+
+th {
+  font-size:20px;
+  font-family:monospace;
+}
+
+td {
+  width:10%;
+  line-height:4;
+  text-align:center;
+  border:10px solid white;
+}
+
+#date {
+  width:60px;
+  height:60px;
+  background-color:rgba(0,0,0,0.1);
+  border-radius:50%;
+  margin:0 auto;
+  font-family:monospace;
+  transition: background-color 0.5s;
+}
+
+#date:hover,#dategot:hover {
+  background-color:lightblue;
+}
+
+#dategot {
+  width:60px;
+  height:60px;
+  background-color:rgba(0,0,150,0.1);
+  border-radius:50%;
+  margin:0 auto;
+  font-family:monospace;
+  transition: background-color 0.5s;
+}
+
+#calpop {
+  margin:auto;
+  height:0px;
+  width:50%;
+  background-color:white;
+  transition:height 0.8s;
+}
+
+#calelements {
+  opacity:0;
+  transition:opacity 1.2s;
+}
+
+#p1 {
+  padding-top:20px;
+  margin-left:20px;
+  opacity:0;
+  font-size:30px;
+  font-family:monospace;
+}
+
+#p2 {
+  margin-left:20px;
+  opacity:0;
+  font-size:20px;
+  font-family:monospace;
+}
+
+caption {
+  font-size:25px;
+  font-family:monospace;
+  margin-bottom:20px;
+  margin-top:-20px;
+}
+/*
+svg {
+  height: 24%;
+  width: 24%;
+  position:relative;
+  top:200px;
+  margin-top:-300px;
+}
+path {
+  fill: white;
+  stroke: black;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+#clouds:hover {
+  animation: mymove 1s;
+  transition:0s 180s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+*/

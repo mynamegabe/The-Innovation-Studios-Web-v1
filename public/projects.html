@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="projects.css"/>
+  <link rel="icon" href="Media/tisposter.png" type="image/gif">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <div class="actionbar">
+    <h3></h3>
+    <div id="barlist">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus2.html">About Us</a></li>
+      <li><a href="#" class="current">Projects</a></li>
+      <li><button id="login" onclick="login()">Login</button></li>
+    </div>
+  </div>
+
+  <div id="header" style="text-align:center;">
+    <h4>Projects</h4>
+    <img src="Media/bg1.jpg" id="staticbg"/>
+  </div>
+
+  <div style="background-color:#202121;">
+  <h1 id="heads">Released</h1><br><br><br>
+  <div class="div1">
+    <div data-aos="fade-right" data-aos-duration="600">
+      <a href="https://play.google.com/store/apps/details?id=com.theinnovationstudios.impossiblecookie&hl=en" target="_block"><img id="clogo" src="Media/cookie.png" style="padding-left:40px;" width="150"></a>
+    </div>
+    <div class="div2" style="color:white;">
+      <strong class="smalltext" data-aos="zoom-in">Impossible Cookie</strong>
+      <p style="padding-left:30px;margin-left:193px;" data-aos="zoom-in">Click the cookies and reach 50 cookies clicked as quickly as possible!</p>
+      <p style="padding-left:30px;margin-left:190px;" data-aos="zoom-in">A 1 minute rush mode is in the works!</p>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="div1">
+    <div data-aos="fade-right" data-aos-duration="1000">
+      <a href="https://play.google.com/store/apps/details?id=com.theinnovationstudios.hangman&hl=en" target="_block"><img id="hlogo" src="Media/hangman.png" style="padding-left:40px;vertical-align:middle;" width="150"></a>
+    </div>
+    <div class="div2" style="color:white;">
+      <strong class="smalltext" data-aos="zoom-in">Hangman</strong>
+      <p style="margin-left:220px" data-aos="zoom-in">Another classic game, Hangman</p>
+      <p style="padding-left:30px;margin-left:190px;" data-aos="zoom-in">Guess the letters and the word before its too late!</p>
+    </div>
+  </div><br><br><br>
+
+  <div class="div1">
+    <div data-aos="fade-right" data-aos-duration="1400">
+      <a href="https://play.google.com/store/apps/details?id=com.theinnovationstudios.tictactoe&hl=en" target="_block"><img id="tlogo" src="Media/tictactoe.png" style="padding-left:40px;float:left;;" width="150"></a>
+    </div>
+    <div id="tcool" class="div2" style="color:white;">
+      <strong class="smalltext" data-aos="zoom-in">Tic Tac Toe</strong>
+      <p style="margin-left:220px">The classic game of Tic Tac Toe</p>
+      <p style="padding-left:30;margin-left:220px;" data-aos="zoom-in" data-aos-offset="-200">Place three X's or O's in a row to win!</p>
+    </div>
+  </div>
+  <!--
+  <div id="clouds">
+    <svg viewBox='0 0 105 105'>
+    <path d='M 25,60
+             a 30,20 1 0,0 0,40
+             h 50
+             a 30,20 1 0,0 0,-40
+             a 10,10 1 0,0 -15,-10
+             a 15,15 1 0,0 -35,10
+             z' />
+    </svg>
+    <svg viewBox='0 0 105 105'>
+    <path d='M 25,60
+             a 20,20 1 0,0 0,40
+             h 50
+             a 30,20 1 0,0 0,-40
+             a 10,10 1 0,0 -15,-10
+             a 15,15 1 0,0 -35,10
+             z' />
+    </svg>
+    <svg viewBox='0 0 105 105'>
+    <path d='M 25,60
+             a 20,20 1 0,0 0,40
+             h 50
+             a 30,20 2 0,0 0,-40
+             a 10,20 1 0,0 -15,-10
+             a 15,15 1 0,0 -35,10
+             z' />
+    </svg>
+    <svg viewBox='0 0 105 105'>
+    <path d='M 25,60
+             a 20,20 1 0,0 0,40
+             h 50
+             a 30,20 1 0,0 0,-40
+             a 10,10 1 0,0 -15,-10
+             a 15,15 1 0,0 -35,10
+             z' />
+    </svg>
+  </div>
+-->
+  <br>
+  <h1 id="heads">Early Access</h1>
+  <div style="text-align:center;"data-aos="fade-right" data-aos-anchor-placement="left-left">
+    <img id="aviation2" src="Media/aviation2.png">
+  </div>
+  <div style="text-align:center;" data-aos="fade-right" data-aos-anchor-placement="left-left">
+    <div style="color:white;font-size:2em;font-family:monospace;">
+      <p>A project we started in 2017 and have been working on for the past 3 years.</p>
+      <p>The game includes many airline management features, all connected together.</p>
+    </div>
+  </div>
+
+  <h1 id="heads">&nbsp</h1>
+  <div id="calendar" data-aos="fade-right">
+    <h5>Calendar</h5>
+    <table style="margin:auto;">
+      <caption>June</caption>
+      <tr><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th></tr>
+      <tr><td><div id="date">1</div></td><td><div id="date">2</div></td><td><div id="date">3</div></td><td><div id="date">4</div></td><td><div id="date">5</div></td>
+        <td><div id="date">6</div></td><td><div id="date">7</div></td></tr>
+      <tr><td><div id="date">8</div></td><td><div id="date">9</div></td><td><div id="date">10</div></td><td><div id="date">11</div></td><td><div id="date">12</div></td>
+        <td><div id="date">13</div></td><td><div id="date">14</div></td></tr>
+      <tr><td><div id="date">15</div></td><td><div id="date">16</div></td><td><div id="date">17</div></td><td><div id="date">18</div></td><td><div id="date">19</div></td>
+        <td><div id="date">20</div></td><td><div id="date">21</div></td></tr>
+      <tr><td><div id="date">22</div></td><td><div id="date">23</div></td><td><div id="date">24</div></td><td><div id="date">25</div></td><td><div id="date">26</div></td>
+        <td><div id="date">27</div></td><td><div id="dategot" onclick="calendarpop()">28</div></td></tr>
+      <tr><td><div id="date">29</div></td><td><div id="date">30</div></td><td><div id="date">31</div></td></tr>
+    </table><br>
+  </div><br><br>
+  <div style="display:block;" id="calpop">
+    <p class="calelements" id="p1">8th June 2020</p>
+    <p class="calelements" id="p2">Impossible Cookie revamp release</p>
+  </div><br><br>
+  <div id="bottombar">
+    <div data-aos="flip-left" data-aos-duration="1000">
+      <a href="https://www.instagram.com/theinnovationstudios/"><img src="Media/iglogo2.png"></a>
+      <a href="mailto:theinnovantionstudios@gmail.com"><img src="Media/gmailicon.png"></a>
+      <a href="#logo"><img src="Media/fb.png"></a>
+    </div>
+    <div data-aos="fade-right" data-aos-offset="-50" data-aos-duration="1000">
+      <h8>@theinnovationstudios</h8><br>
+      <h8>theinnovationstudios@gmail.com</h8>
+    </div>
+  </div>
+
+  <div id="logodiv" style="display:none;text-align:center;">
+    <img src="Media/tisposter.png" width="200"/>
+    <h6>Login</h6>
+    <form id="loginform" method="get" action="profile.html">
+      <label for="username" id="usertext">Username:</label>
+      <input type="text" id="userinput" name="userinput"/>
+      <br><br>
+      <label for="password" id="passtext">Password:</label>
+      <input type="password" id="userpass" name="userpass"/>
+      <br>
+      <button type="button" id="forgotpass" onclick="forgotpass()">Forgot password</button><br><br>
+      <button type="submit" id="loginbutton">Login</button><br><br>
+      <button type="button" id="signup" onclick="popsignup()">Don't have an account? Sign up!</button><br><br><br>
+      <button type="button" id="close" onclick="closeform()">Back</label>
+    </form>
+  </div>
+  <div id="signuppop" style="display:none;text-align:center;">
+    <img src="Media/tisposter.png" width="200"/>
+    <h6>Signup</h6>
+    <form id="loginform" method="get" action="profile.html">
+      <label for="username" id="usertext">Username:</label>
+      <input type="text" id="userinput" name="userinput"/><br><br>
+      <label for="email" id="emailtext">Email:</label>
+      <input type="email" id="useremail" name="useremail"/>
+      <br><br>
+      <label for="password" id="passtext">Password:</label>
+      <input type="password" id="userpass" name="userpass"/>
+      <br><br>
+      <label for="password" id="passtext2">Repeat Password:</label>
+      <input type="password" id="userpass2" name="userpass2"/>
+      <br>
+      <button type="submit" id="signupbutton" onclick="usersignup()">Sign Up</button><br><br>
+      <button type="button" id="signup" onclick="login()" action="">Have an account? Log in!</button><br><br><br>
+      <button type="button" id="close" onclick="closeform()">Back</label>
+    </form>
+  </div>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1400
+    });
+  </script>
+</body>
